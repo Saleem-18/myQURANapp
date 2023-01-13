@@ -10,24 +10,34 @@
         android:id="@+id/btn_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="36dp"
         android:text="Search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_parah"
-        app:layout_constraintVertical_bias="0.248" />
+        app:layout_constraintTop_toBottomOf="@+id/text_parah" />
+
+    <Button
+        android:id="@+id/btn_git"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="GitHub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toEndOf="@+id/btn_search"
+        app:layout_constraintTop_toBottomOf="@+id/text_parah" />
 
     <TextView
         android:id="@+id/textView_display"
-        android:layout_width="318dp"
-        android:layout_height="217dp"
+        android:layout_width="407dp"
+        android:layout_height="302dp"
         android:text="No Ayat Found"
         android:textAlignment="center"
         android:textAllCaps="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/text_parah"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/text_surah"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -41,10 +51,10 @@
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.116"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.225" />
+        app:layout_constraintVertical_bias="0.247" />
 
     <EditText
         android:id="@+id/text_parah"
@@ -55,9 +65,9 @@
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_surah"
-        app:layout_constraintVertical_bias="0.128" />
+        app:layout_constraintVertical_bias="0.099" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
